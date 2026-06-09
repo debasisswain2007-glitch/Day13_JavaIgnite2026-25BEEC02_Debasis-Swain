@@ -22,6 +22,28 @@ Break the problem into steps:
 
 First store raw data in ArrayList
 Then group marks by course using HashMap
-Then iterate HashMap to calculate averages
+
+for each loop - enhanced for loop 
+for(int i=0;i<list.size();i++)
+Student s=list.get(i)
+
+for(Student s : list)
+String course = s.course 
+int marks = s.marks 
+if(map.containsKey(course))
+ArrayList<Integer> marksList = map.get(course)
+marksList.add(marks)
+
+ArrayList<Integer> marksList = map.get(course)
+marksList.add(marks)
+map.put(course,marksList)
+
+
+Then iterate HashMap to calculate averages - for(String course:map.keySet())- creating arraylist -int sum =0, 
+for(int i=0;i<marksList.size();i++)
+sum=sum+marksList(i)
+double =(double)sum/marksList.size();
+
+
 Finally compare averages
   */
